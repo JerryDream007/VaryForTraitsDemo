@@ -1,24 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m5Z-th-Gsg"/>
+                        <viewControllerLayoutGuide type="bottom" id="wRh-Qd-h69"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8C-vL-cXc">
+                                <rect key="frame" x="20" y="40" width="335" height="200"/>
+                                <color key="backgroundColor" red="0.043646918399999998" green="0.88680013020000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="KMg-lf-atR"/>
+                                    <constraint firstAttribute="width" constant="100" id="u56-34-s3p"/>
+                                    <constraint firstAttribute="height" constant="200" id="xmB-71-AIy"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KMg-lf-atR"/>
+                                        <exclude reference="u56-34-s3p"/>
+                                        <exclude reference="xmB-71-AIy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="KMg-lf-atR"/>
+                                        <include reference="u56-34-s3p"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="xmB-71-AIy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="displayGamut=sRGB-heightClass=compact">
+                                    <color key="backgroundColor" red="1" green="0.78823529410000004" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </variation>
+                                <variation key="displayGamut=sRGB-heightClass=regular">
+                                    <color key="backgroundColor" red="1" green="0.3411764706" blue="0.47843137250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </variation>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="P8C-vL-cXc" firstAttribute="top" secondItem="m5Z-th-Gsg" secondAttribute="bottom" constant="20" id="8gD-83-s4V"/>
+                            <constraint firstItem="P8C-vL-cXc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="IaA-vF-oF3"/>
+                            <constraint firstItem="P8C-vL-cXc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OY7-0M-7mz"/>
+                            <constraint firstAttribute="trailing" secondItem="P8C-vL-cXc" secondAttribute="trailing" constant="20" id="mBN-0L-NMC"/>
+                            <constraint firstItem="P8C-vL-cXc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yC3-9o-M6I"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8gD-83-s4V"/>
+                                <exclude reference="IaA-vF-oF3"/>
+                                <exclude reference="OY7-0M-7mz"/>
+                                <exclude reference="mBN-0L-NMC"/>
+                                <exclude reference="yC3-9o-M6I"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="OY7-0M-7mz"/>
+                                <include reference="yC3-9o-M6I"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="8gD-83-s4V"/>
+                                <include reference="IaA-vF-oF3"/>
+                                <include reference="mBN-0L-NMC"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="478.2608695652176" y="46.467391304347835"/>
         </scene>
     </scenes>
 </document>
