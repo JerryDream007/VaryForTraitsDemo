@@ -1,0 +1,2 @@
+# VaryForTraitsDemo
+适配iPad和iPhone及横屏竖屏
